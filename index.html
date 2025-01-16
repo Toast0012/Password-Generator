@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="#ffffff"
+            d="M 12 2 C 9.2475888 2 7 4.2475888 7 7 L 7 9 L 5.4902344 9 C 4.1239274 9 3 10.123927 3 11.490234 L 3 19.509766 C 3 20.876073 4.1239274 22 5.4902344 22 L 18.509766 22 C 19.876073 22 21 20.876073 21 19.509766 L 21 11.490234 C 21 10.123927 19.876073 9 18.509766 9 L 17 9 L 17 7 C 17 4.2475888 14.752411 2 12 2 z M 12 3.5 C 13.941589 3.5 15.5 5.0584112 15.5 7 L 15.5 9 L 8.5 9 L 8.5 7 C 8.5 5.0584112 10.058411 3.5 12 3.5 z M 5.4902344 10.5 L 18.509766 10.5 C 19.065459 10.5 19.5 10.934541 19.5 11.490234 L 19.5 19.509766 C 19.5 20.065459 19.065459 20.5 18.509766 20.5 L 5.4902344 20.5 C 4.9345413 20.5 4.5 20.065459 4.5 19.509766 L 4.5 11.490234 C 4.5 10.934541 4.9345413 10.5 5.4902344 10.5 z"
+          ></path>
+        </svg>
+        <h1>Secure Your Passwords</h1>
+        <p>
+          Make your passwords secure with this password generator. You may never
+          know but there is a chance your passwords have been compromised in a
+          database! It's best to create unique and complex passwords.
+        </p>
+      </div>
+      <br />
+      <form>
+        <label for="length">Password Length</label>
+        <input type="text" id="length" name="length" placeholder="16-32" />
+        <p style="margin-bottom: 0">Include:</p>
+        <div class="include">
+          <input class="toggle" type="checkbox" id="upper" name="upper" />
+          <label for="upper">Uppercase Letters</label>
+          <div class="break"></div>
+          <input class="toggle" type="checkbox" id="lower" name="lower" />
+          <label for="lower">Lowercase Letters</label>
+          <div class="break"></div>
+          <input class="toggle" type="checkbox" id="numbers" name="numbers" />
+          <label for="numbers">Numbers</label>
+          <div class="break"></div>
+          <input class="toggle" type="checkbox" id="symbols" name="symbols" />
+          <label for="symbols">Symbols</label>
+        </div>
+      </form>
+      <button class="generate">Generate Password</button>
+      <div><div class</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
