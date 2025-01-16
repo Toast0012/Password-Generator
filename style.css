@@ -121,3 +121,23 @@ form {
   font-weight: 600;
   font-size: 14px;
 }
+
+.generated {
+  width: 70%;
+  height: 40px;
+  border: solid 1px #1e293b;
+  border-radius: 0.375rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copy {
+  border: none;
+  background-color: #fafafa;
+  color: #0f172a;
+  border-radius: 0.375rem;
+  font-family: "Nunito";
+  width: 30%;
+}
