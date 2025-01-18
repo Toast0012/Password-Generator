@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Password Generator</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <div class="container">
@@ -41,23 +35,62 @@
         <input type="text" id="length" name="length" placeholder="16-32" />
         <p style="margin-bottom: 0">Include:</p>
         <div class="include">
-          <input class="toggle" type="checkbox" id="upper" name="upper" />
+          <input
+            onclick="toggleUpper()"
+            class="toggle"
+            type="checkbox"
+            id="upper"
+            name="upper"
+            checked="true"
+          />
           <label for="upper">Uppercase Letters</label>
           <div class="break"></div>
-          <input class="toggle" type="checkbox" id="lower" name="lower" />
+          <input
+            onclick="toggleLower()"
+            class="toggle"
+            type="checkbox"
+            id="lower"
+            name="lower"
+            checked="true"
+          />
           <label for="lower">Lowercase Letters</label>
           <div class="break"></div>
-          <input class="toggle" type="checkbox" id="numbers" name="numbers" />
+          <input
+            onclick="toggleNumbers()"
+            class="toggle"
+            type="checkbox"
+            id="numbers"
+            name="numbers"
+            checked="true"
+          />
           <label for="numbers">Numbers</label>
           <div class="break"></div>
-          <input class="toggle" type="checkbox" id="symbols" name="symbols" />
+          <input
+            onclick="toggleSymbols()"
+            class="toggle"
+            type="checkbox"
+            id="symbols"
+            name="symbols"
+            checked="true"
+          />
           <label for="symbols">Symbols</label>
         </div>
       </form>
-      <button class="generate">Generate Password</button>
-      <div style="margin-left: 1.5%; display: flex; flex-direction: row; margin-top: 20px; width: 25%; gap: 5px">
+      <button onclick="generatePassword()" class="generate">
+        Generate Password
+      </button>
+      <div
+        style="
+          margin-left: 1.5%;
+          display: flex;
+          flex-direction: row;
+          margin-top: 20px;
+          width: 25%;
+          gap: 5px;
+        "
+      >
         <div class="generated"><span id="generated"></span></div>
-        <button class="copy">Copy</button>
+        <button onclick="copy()" class="copy">Copy</button>
       </div>
     </div>
     <script src="script.js"></script>

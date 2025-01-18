@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Nunito";
+  src: url("fonts/Nunito-Regular.ttf") format("truetype"),
+    url("fonts/Nunito-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
   height: 100%;
@@ -13,6 +21,7 @@ body {
 input[type="text"] {
   border-radius: 0.375rem;
   border: 1px solid #1e293b;
+  color: white;
   background-color: transparent;
   width: 100%;
   height: 40px;
@@ -123,12 +132,12 @@ form {
 }
 
 .generated {
-  width: 70%;
+  display: flex;
+  width: 85%;
   height: 40px;
   border: solid 1px #1e293b;
   border-radius: 0.375rem;
   text-align: center;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -139,5 +148,10 @@ form {
   color: #0f172a;
   border-radius: 0.375rem;
   font-family: "Nunito";
-  width: 30%;
+  width: 15%;
+}
+
+input[type="checkbox"],
+button {
+  cursor: pointer;
 }
